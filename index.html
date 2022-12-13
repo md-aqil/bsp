@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/starter.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
+    <title>BSP</title>
+    <style>
+      .fe-logo {
+    width: 254px;
+
+}
+
+
+.card.card-glow img {
+    height: 190px;
+    object-fit: cover;
+}
+
+.social_icons_list_icon a svg {
+    fill: #19aafc;
+}
+.fe-logo {
+ 
+    background: #18171F;
+    box-shadow: 5px 5px 0px rgb(0 229 255 / 50%);
+}
+.fe-logo {
+  transition: all .2s ease-in;
+}
+
+.fe-logo img {
+  opacity: .7;
+    filter: invert(1) grayscale(100%);
+}
+
+.fe-logo:hover {
+  box-shadow: 1px 1px 40px rgb(0 229 255 / 50%);
+  border: 1px solid #00E5FF;
+  transform: translate(3px ,3px);
+}
+.fe-logo:hover img {
+  opacity: 1;
+}
+
+.swiper-team .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 1;
+}
+.swiper-team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #19AAFC;
+    box-shadow: 0 0 5px #19aafc, 0 0 25px #19aafc, 0 0 50px #19aafc, 0 0 80px #19aafc;
+}
+.ts-icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.ts-icons li img {
+  filter: invert(1);
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  opacity: .6;
+}
+.ts-icons li img:hover {
+  opacity: 1;
+}
+
+.mySwiper {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+      .swiper-button-next, .swiper-rtl .swiper-button-prev {
+          color: var(--yellow-color)
+      }
+      .swiper-button-prev, .swiper-rtl .swiper-button-next {
+          color: var(--yellow-color)
+      }
+     
+       .navigation {
+        position: absolute;
+    /* bottom: -20px; */
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    --swiper-navigation-size: 24px;
+  
+       }
+       .tm-full-row {
+           position: relative;
+       }
+   
+ .quarter-wrapper .quarter-year {
+    border-left: 1px solid var(--yellow-color);
+}
+ .quarter-wrapper .quarter-year {
+    padding: 20px 30px 0;
+    border-top: 1px solid var(--yellow-color);
+   
+    margin-bottom: 30px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-left: -30px;
+    margin-right: -65px;
+}
+
+ .quarter-wrapper .quarter-year .year {
+    font-size: 50px;
+    color: var(--yellow-color);
+    margin-bottom: 11px;
+    margin-left: 20px;
+    line-height: 1;
+ 
+}
+.quarter-text {
+    font-size: 50px;
+   color: #ffffffbd;;
+    margin-bottom: 20px;
+    font-weight: 300;
+    margin-left: -20px;
+  
+}
+.quarter-wrapper .quarter-detail:hover {
+    transform: translateY(-15px);
+    filter: drop-shadow( 0 0 5px #e6ac6454) drop-shadow( 0 0 25px #e6ac6454);
+}
+.quarter-detail ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+.quarter-detail ul li {
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.70);
+}
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+.t-card p {
+  color: #ffffffbd;
+}
+.t-card h4{
+  color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 21px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="hero-sec">
+
+      <div class="hero-overlay">
+        <ul class="follow">
+    
+          <li><a href="#">
+           <img src="./img/twitter.svg" alt="">
+          </a></li>
+          <li><a href="#">
+            <img src="./img/facebook.svg" alt="">
+           </a></li>
+           <li><a href="#">
+            <img src="./img/instagram.svg" alt="">
+           </a></li>
+          
+        </ul>
+        <div class="container por">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4 hero-nav">
+            <a class="navbar-brand" href="#">
+              <img src="./img/bsb-logo.png"  alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto" id="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Ideology</a>
+                </li>
+                     
+                <li class="nav-item ">
+                <a class="nav-link page" href="#">Focus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link page" href="#">Programme</a>
+                  </li>
+                <li class="nav-item ">
+                <a class="nav-link page" href="#">Media</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link page" href="#">Leadership</a>
+                  </li>
+                
+                <li class="nav-item ">
+                  <a class="nav-link page" href="#">Why BSP</a>
+                  </li>
+             
+                 </ul>
+  
+              <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn btn-xofo my-2 px-3 ml-2 my-sm-0" type="submit">Donation</a>
+              </form>
+            </div>
+          </nav>
+        </div>
+         <!-- Swiper -->
+   <div class="swiper heroSwiper">
+    <div
+    class="parallax-bg"
+    style="
+      background-image: url(./img/didi-bg.jpg);
+    "
+    data-swiper-parallax="-10%"
+  ></div>
+
+    <div class="swiper-wrapper">
+    
+   
+      <div class="swiper-slide">
+        <div class="h-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="title" data-swiper-parallax="-10" style="font-size: 70px;">बहुजन समाज पार्टी</div>
+              <div class="subtitle" data-swiper-parallax="-0">- सर्वजन हिताय, सर्वजन सुखाय</div>
+            </div>
+            <div class="col-md-6">
+             
+            </div>
+          </div>  <!-- row -->
+        </div>
+        <img src="./img/didi0.png" class="didi-front" alt="">
+      </div>  <!-- swiper-slide -->
+      <div class="swiper-slide">
+        <div class="h-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="title" data-swiper-parallax="-10">MAYAWATI LAUNCHES HER BLUE BOOK</div>
+              <div class="subtitle" data-swiper-parallax="-10">
+                Her struggles in life and the BSP movement inspires party workers to strive for inclusive development  
+              </div>
+            </div>
+            <div class="col-md-6">
+            
+            </div>
+          </div>  <!-- row -->
+        </div>
+        <img src="./img/didi0.png" class="didi-front" alt="">
+      </div>  <!-- swiper-slide -->
+      <div class="swiper-slide">
+        <div class="h-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="title" data-swiper-parallax="-0">MAYAWATI LAUNCHES HER BLUE BOOK</div>
+              <div class="subtitle" data-swiper-parallax="-10">
+                Her struggles in life and the BSP movement inspires party workers to strive for inclusive development  
+              </div>
+            </div>
+            <div class="col-md-6">
+            
+            </div>
+          </div>  <!-- row -->
+        </div>
+        <img src="./img/didi0.png" class="didi-front" alt="">
+      </div>  <!-- swiper-slide -->
+     
+    </div>
+    <div class="hero-ars">
+      <div class="hero-ars-prev mr-3">
+        <img src="./img/arrow-left.svg" alt="">
+      </div>
+      <div class="hero-ars-next">
+        <img src="./img/arrow-right.svg" alt="">
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    
+  </div>
+
+    </div>
+    
+
+      </div>
+    
+      
+   
+  
+  
+    <section class="">
+      <div class="container">
+        <div class="row  bb-row mb-5">
+      
+          <div class="col">
+            <div class="img-box">
+                <img src="./img/didi-bg.jpg" alt="">
+                <p>
+                  Membership Restoration Login
+                </p>
+            </div>
+        </div>
+        <div class="col">
+          <div class="img-box">
+              <img src="./img/didi-bg.jpg" alt="">
+              <p>
+                Bhenji Leadership
+              </p>
+          </div>
+      </div>
+      <div class="col">
+        <div class="img-box">
+            <img src="./img/didi-bg.jpg" alt="">
+            <p>
+              Legacy
+            </p>
+        </div>
+    </div>
+    <div class="col">
+      <div class="img-box">
+          <img src="./img/didi-bg.jpg" alt="">
+          <p>
+           State
+          </p>
+      </div>
+  </div>
+    <div class="col">
+      <div class="img-box">
+          <img src="./img/didi-bg.jpg" alt="">
+          <p>
+           Social
+          </p>
+      </div>
+  </div>
+        </div>
+     
+      </div>
+    </section>
+   
+    <section class="bg-gray py-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+              <div class="border-box">
+                <h4>Behenji's Governance Model</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          <div class="col">
+            <div class="border-box">
+              <h4>Why BSP?</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+          <div class="col">
+            <div class="border-box">
+              <h4>Behenji's Message</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+        </div>
+        <div class="col">
+          <div class="border-box">
+            <h4>Join Behenji</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          </div>
+      </div>
+      <div class="col">
+        <div class="border-box">
+          <h4>Social justice awareness campaign & Programs</h4>
+          <p>Lorem ipsum dolor sit amet consectetur </p>
+        </div>
+    </div>
+ 
+        </div>
+     
+      </div>
+    </section>
+   
+      <section class="spacer por">
+    
+      <div class="container">
+        <div class="row id-card">
+          <div class="col-md-4 fade-in" data-scroll>
+            <div class="card">
+              <img src="./img/didi-1.jpg" alt="">
+              <h4 class="mt-3">Bahujan Ideology</h4>
+          </div>
+          </div>
+          <div class="col-md-4 fade-in" data-scroll>
+            <div class="card">
+              <img src="./img/youth.png" alt="">
+              <h4 class="mt-3">Youth Leadership</h4>
+          </div>
+          </div>
+          <div class="col-md-4 fade-in" data-scroll>
+            <div class="card">
+              <img src="./img/Mayawati.avif" alt="">
+              <h4 class="mt-3">Woman Leadership</h4>
+          </div>
+          </div>
+          <div class="col-md-4 fade-in mt-4" data-scroll>
+            <div class="card">
+              <img src="./img/justice.jpg" alt="">
+              <h4 class="mt-3">Economic Justice</h4>
+          </div>
+          </div>
+          <div class="col-md-4 fade-in mt-4" data-scroll>
+            <div class="card">
+              <img src="./img/social justice.webp" alt="">
+              <h4 class="mt-3">Social justice in contemporary times </h4>
+          </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <section class="spacer-bottom por">
+      <img src="./img/ambedkar.jpg" style="width: 100%;" alt="">
+    </section>
+
+
+    <footer class="site-footer bg-gray" style="position: relative; overflow: hidden;">
+      <div class="container my-5">
+          <div class="row">
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>Join</h4>
+                </li>
+                <li>
+                  <a href="">Careers</a>
+                </li>
+                <li>
+                  <a href="">Online Membership</a>
+                </li>
+                <li>
+                  <a href="">Volunteer</a>
+                </li>
+                <li>
+                  <a href="">Regional Teams</a>
+                </li>
+              </ul>
+            </div>
+           
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>History</h4>
+                </li>
+                <li>
+                  <a href="">Our journey</a>
+                </li>
+                <li>
+                  <a href="">Rise Of BSP</a>
+                </li>
+                <li>
+                  <a href="">Establishment</a>
+                </li>
+                <li>
+                  <a href="">Leaders</a>
+                </li>
+              </ul>
+            </div>
+         
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>Shop</h4>
+                </li>
+                <li>
+                  <a href="">List of merchandise</a>
+                </li>
+            
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>Party</h4>
+                </li>
+                <li>
+                  <a href="">Constitution</a>
+                </li>
+                <li>
+                  <a href="">Manifesto</a>
+                </li>
+                <li>
+                  <a href="">Party Organisation</a>
+                </li>
+                
+              </ul>
+            </div>
+
+
+
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>Dalit literature</h4>
+                </li>
+                <li>
+                  <a href="">Documents</a>
+                </li>
+                <li>
+                  <a href="">Books</a>
+                </li>
+                <li>
+                  <a href="">Papers</a>
+                </li>
+               
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <h4>Contact</h4>
+                </li>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="">Cockies</a>
+                </li>
+                <li>
+                  <a href="">Socials</a>
+                </li>
+                <li><a href="">
+                  Terms of use
+                </a></li>
+                
+                
+              </ul>
+            </div>
+
+          </div>
+      </div>
+   
+    </footer>
+    
+
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/scroll-out.js"></script>
+
+    <script src="./js/controller.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script>
+
+	var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene)
+
+    var scene2 = document.getElementById('scene2');
+		var parallax = new Parallax(scene2)
+
+    var scene3 = document.getElementById('scene3');
+		var parallax = new Parallax(scene3)
+
+      $('.navbar-ham').click(function() {
+          $('.dropdown-menu').slideToggle()
+      });
+    
+ </script>
+</body>
+</html>
