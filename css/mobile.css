@@ -525,6 +525,44 @@
 	font-size: 20px;
 }
 
+.h-content .col-md-6 {
+	width: 100%;
+}
+.heroSwiper .swiper-slide .title {
+	font-size: 24px !important;
+	font-weight: bold;
+	line-height: 1.4;
+}
+.h-content {
+	top: 40vh;
+}
+
+.didi-front {
+	position: absolute;
+	top: 300px;
+	width: 100% !important;
+	height: 480px !important;
+	right: 0px !important;
+	left: 0;
+	margin: auto;
+	object-fit: contain !important;
+}
+.hero-ars {
+	position: absolute;
+	z-index: 100;
+	bottom: 39%;
+	left: 30px;
+	display: flex;
+}
+
+.heroSwiper .swiper-slide .subtitle {
+	font-size: 16px;
+	font-weight: 300;
+}
+.follow a {
+	width: 40px;
+	height: 40px;
+}
 }
 
 /* mobile css END herer =====================================*/
