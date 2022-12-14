@@ -563,6 +563,11 @@
 	width: 40px;
 	height: 40px;
 }
+.site-footer .row .col {
+	width: 50%;
+	flex-basis: 50%;
+}
+
 }
 
 /* mobile css END herer =====================================*/
